@@ -1,7 +1,13 @@
+.body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+}
+
 .container {
     height: 757px;
     width: 651px;
-    margin: auto;
     background-image: url(../../assets/images/bg-main.png);
     background-repeat: no-repeat;
     background-position: center;
