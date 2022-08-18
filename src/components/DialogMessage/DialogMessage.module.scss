@@ -1,0 +1,101 @@
+.dialog_area__message {
+    margin-bottom: 20px;
+    display: flex;
+    flex-direction: row;
+    max-width: 100%;
+}
+
+.user {
+    align-self: flex-start;
+}
+
+.appponent {
+    align-self: flex-end;
+}
+
+.message {
+    font-family: "Roboto", sans-serif;
+    font-size: 14px;
+    line-height: 24px;
+    background-color: #f1f3f5;
+    border-radius: 5px;
+    padding: 11px 15px;
+    position: relative;
+    max-width: calc(100% - 146px);
+    overflow-wrap: break-word;
+    overflow-wrap: anywhere;
+    display: block;
+}
+
+.message_user {
+    margin-left: 65px;
+    margin-right: 81px;
+}
+
+.message_user::before {
+    position: absolute;
+    content: "";
+    border: 7px solid transparent;
+    border-top: 7px solid #f1f3f5;
+    left: -7px;
+}
+
+.message_user::after {
+    position: absolute;
+    content: "";
+    height: 47px;
+    width: 47px;
+    left: -65px;
+    top: 0;
+    background-color: #fff;
+}
+
+.message_appponent {
+    margin-right: 81px;
+    margin-left: 65px;
+    background-color: #fff;
+}
+
+.message_appponent::before {
+    position: absolute;
+    content: "";
+    border: 7px solid transparent;
+    border-top: 7px solid #f1f3f5;
+    right: -7px;
+}
+
+.message_appponent::after {
+    position: absolute;
+    content: "";
+    height: 47px;
+    width: 47px;
+    right: -65px;
+    top: 0;
+}
+
+.date_line {
+    display: flex;
+}
+
+.date {
+    font-family: Roboto;
+    font-size: 14px;
+    line-height: 24px;
+    margin-bottom: 16px;
+}
+
+.line {
+    position: relative;
+    top: 12px;
+    background: #dbdbdb;
+    height: 1px;
+    flex: 1 0 auto;
+}
+
+.line_left {
+    left: -15px;
+}
+
+.line_right {
+    right: -30px;
+}
